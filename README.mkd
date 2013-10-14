@@ -1,0 +1,64 @@
+# is
+
+> Cross-vm type checking utils for javascript
+
+#### Node.js:
+[![Build Status](https://travis-ci.org//is.png)](https://travis-ci.org/tarruda/is)
+
+#### Browsers:
+[![Selenium Test Status](https://saucelabs.com/browser-matrix/_is.svg)](https://saucelabs.com/u/tarruda_is)
+
+
+## Installation
+
+```sh
+npm install --save is
+```
+
+## Usage
+
+```js
+var is = require('is');
+
+
+is.func(Object); // true
+
+is.number(5); // true
+is.number(new Number(5)); // true
+
+is.boolean(false); // true
+is.boolean(new Boolean(false)); // true
+
+is.string('string'); // true
+is.string(new String('string')); // true
+
+is.nil(null); // true
+is.nil(undefined); // true
+
+is.undefined(undefined); // true
+is.undefined(null); // false
+
+is.regexp(/regexp/); // true
+is.regexp(new RegExp('regexp')); // true
+
+is.date(new Date()); // true
+
+is.array([]); // true
+is.array(new Array()); // true
+
+is.type(null); // 'null'
+is.type(undefined) // 'undefined'
+is.type(5); // 'number'
+is.type(new Number(5)); // 'number'
+is.type(true); // 'boolean'
+is.type(new Boolean(true)); // 'boolean'
+is.type('str'); // 'string'
+is.type(new String('str')); // 'string'
+is.type(new Date()); // 'date';
+is.type(new RegExp('regexp')); // 'regexp'
+is.type(/regexp/); // 'regexp'
+is.type(new Array()); // 'array'
+is.type([]); // 'array'
+is.type(new Function()); // 'function'
+is.type(Object); // 'function'
+```

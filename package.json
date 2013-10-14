@@ -1,0 +1,38 @@
+{
+  "name": "is",
+  "description": "Cross-vm type checking utils for javascript",
+  "version": "0.0.0",
+  "homepage": "https://github.com/tarruda/is",
+  "author": {
+    "name": "Thiago de Arruda",
+    "email": "tpadilha84@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tarruda/is.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tarruda/is/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/tarruda/is/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "./lib/index",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-livereload": "~0.1.2",
+    "grunt-mocha-debug": "~0.0.8",
+    "grunt-newer": "~0.5.4",
+    "powerbuild": "~0.0.9",
+    "grunt-saucelabs": "~4.1.2",
+    "grunt-release": "~0.5.1"
+  },
+  "scripts": {
+    "test": "grunt ci"
+  }
+}
