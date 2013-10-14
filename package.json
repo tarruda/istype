@@ -1,7 +1,7 @@
 {
-  "name": "is",
+  "name": "istype",
   "description": "Cross-vm type checking utils for javascript",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "homepage": "https://github.com/tarruda/is",
   "author": {
     "name": "Thiago de Arruda",
@@ -19,6 +19,11 @@
       "type": "MIT",
       "url": "https://github.com/tarruda/is/blob/master/LICENSE-MIT"
     }
+  ],
+  "keywords": [
+    "type",
+    "type-check",
+    "is"
   ],
   "main": "./lib/index",
   "devDependencies": {

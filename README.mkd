@@ -1,24 +1,24 @@
-# is
+# istype
 
 > Cross-vm type checking utils for javascript
 
 #### Node.js:
-[![Build Status](https://travis-ci.org//is.png)](https://travis-ci.org/tarruda/is)
+[![Build Status](https://travis-ci.org/tarruda/istype.png)](https://travis-ci.org/tarruda/istype)
 
 #### Browsers:
-[![Selenium Test Status](https://saucelabs.com/browser-matrix/_is.svg)](https://saucelabs.com/u/tarruda_is)
+[![Selenium Test Status](https://saucelabs.com/browser-matrix/tarruda_istype.svg)](https://saucelabs.com/u/tarruda_istype)
 
 
 ## Installation
 
 ```sh
-npm install --save is
+npm install --save istype
 ```
 
 ## Usage
 
 ```js
-var is = require('is');
+var is = require('istype');
 
 
 is.func(Object); // true
