@@ -1,7 +1,7 @@
 {
   "name": "is",
   "description": "Cross-vm type checking utils for javascript",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "homepage": "https://github.com/tarruda/is",
   "author": {
     "name": "Thiago de Arruda",
