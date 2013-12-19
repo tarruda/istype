@@ -52,6 +52,10 @@ runMocha({
       ok(is.array(new Array()));
     },
 
+    'buffer': function() {
+      ok(is.buffer(new Buffer(0)));
+    },
+
     'type': function() {
       equal(is.type(null), 'null');
       equal(is.type(undefined), 'undefined');
@@ -68,6 +72,7 @@ runMocha({
       equal(is.type([]), 'array');
       equal(is.type(new Function()), 'function');
       equal(is.type(Object), 'function');
+      equal(is.type(new Buffer(0)), 'buffer');
     }
   }
 });
